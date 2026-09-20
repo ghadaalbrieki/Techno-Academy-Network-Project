@@ -1,55 +1,79 @@
-Techno Academy Network Project
+# 🌐 Techno Academy Network
 
-📘 Overview
-This project is a simulation of a network for a technical education institute called Techno Academy.
-It includes three branches: Muscat (main branch), Salalah, and Sohar. Each branch has multiple VLANs to separate users into IT, Staff, Teachers, Students, and Guests. The main branch hosts core servers for DHCP, DNS, Web, Email, NTP, and Syslog, while other branches have DHCP servers to manage IP addresses.
+## 📘 Overview
 
-🖥️ Network Components
+This project is a Cisco Packet Tracer simulation of a network for a technical education institute called **Techno Academy**.
 
-3 Branch Routers
+The network includes three branches: **Muscat (Main Branch), Sohar, and Salalah**. Each branch uses VLANs to separate different user groups, including IT, Staff, Teachers, Students, and Guests.
 
-Multiple Switches in each branch
+The main branch includes core network services such as DHCP, DNS, Web, Email, NTP, and Syslog.
 
-DHCP Servers
+This project was created as a networking practice project to apply concepts learned through self-learning and Cisco Packet Tracer exercises.
 
-DNS, Web, Email, NTP, Syslog Servers (Main branch)
+## 🖥️ Network Components
 
-Multiple PCs per VLAN
+* 3 Branch Routers
+* Multiple Switches
+* DHCP Servers
+* DNS Server
+* Web Server
+* Email Server
+* NTP Server
+* Syslog Server
+* Multiple PCs
 
-🗺️ VLAN Distribution
+## 🗺️ VLAN Distribution
 
-VLAN	Purpose	Branches
-10	IT	All branches
-15	Staff	All branches
-20	Teacher	All branches
-30	Student	All branches
-40	Guest	All branches
+| VLAN | Purpose  | Branches               |
+| ---- | -------- | ---------------------- |
+| 10   | IT       | Muscat, Sohar, Salalah |
+| 15   | Staff    | Muscat, Sohar, Salalah |
+| 20   | Teachers | Muscat, Sohar, Salalah |
+| 30   | Students | Muscat, Sohar, Salalah |
+| 40   | Guests   | Muscat, Sohar, Salalah |
 
-⚙️ Configuration Highlights
+## ⚙️ Networking Concepts Applied
 
-VLANs created on all switches and assigned to access ports.
+* VLAN configuration and segmentation
+* Access and trunk ports
+* Inter-VLAN routing
+* DHCP configuration
+* IP addressing and subnetting
+* Routing between branches
+* Basic network services
+* Network connectivity testing
 
-Trunk ports configured for inter-switch communication.
+## 🧪 Testing
 
-DHCP configured per VLAN to automatically assign IPs.
+The network was tested using connectivity checks and DHCP verification, including:
 
-Core services (DNS, Web, Email, NTP, Syslog) configured at the main branch.
+* DHCP address assignment for different VLANs
+* Communication between devices within the same VLAN
+* Inter-VLAN connectivity
+* Connectivity between branches
+* Access to core services from different branches
 
-All branches are interconnected for communication and resource sharing.
+## 📚 Skills Practiced
 
-✅ Testing & Results
+Through this project, I practiced:
 
-VLAN separation works correctly for all user types.
+* VLANs and network segmentation
+* Trunking
+* DHCP
+* Inter-VLAN routing
+* IP addressing
+* Basic routing
+* Network troubleshooting and connectivity testing
+* Cisco Packet Tracer
 
-DHCP assigns IP addresses in each VLAN correctly.
+## 📁 Included Files
 
-PCs can communicate within VLANs and between branches.
+| File                | Description                      |
+| ------------------- | -------------------------------- |
+| `TechnoAcademy.pkt` | Cisco Packet Tracer network file |
+| `screenshot.png`    | Network topology screenshot      |
+| `README.md`         | Project documentation            |
 
-Core services are reachable from all branches.
+## 🎯 Project Purpose
 
-📁 Included Files
-
-File Name	Description
-TechnoAcademy.pkt	Cisco Packet Tracer network file
-screenshot.png	Image of the network design
-README.md	Project documentation
+This project is part of my ongoing learning and practice in **networking and IT infrastructure**. It helped me practice designing, configuring, and testing a multi-branch network environment using Cisco Packet Tracer.
